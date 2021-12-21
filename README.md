@@ -2,7 +2,7 @@
 These scripts were either written or modified by Kyle Brooks
 
 ## Installation
-Each folder contains the required files to run the tools within I-Simpa 1.3.4 with the Python 2.7 Interperator. 
+Each folder contains the required files to run the tools within I-Simpa 1.3.4 with the Python 2.x Interperator. 
 **Administrator controls are required to install any of these tools**
 
 1. Download the desired tools by pressing the "Code" button at the top of the screen and then "Download ZIP"
