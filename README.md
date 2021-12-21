@@ -1,5 +1,5 @@
 # i_simpa_python2
-Author: Kyle Brooks
+These scripts were either written or modified by Kyle Brooks
 
 ## Installation
 Each folder contains the required files to run the tools within I-Simpa 1.3.4 with the Python 2.7 Interperator. 
