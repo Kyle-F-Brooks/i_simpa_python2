@@ -10,7 +10,7 @@ import os
 def do_convert_all(folderwxid):
     folder=ui.element(folderwxid)
     for el in folder.childs():
-        print el
+        # print el
         if el[1] == ui.element_type.ELEMENT_TYPE_REPORT_FOLDER:
             do_convert_all(el[0])
         elif el[1] in [ui.element_type.ELEMENT_TYPE_REPORT_GABE_RECP, ui.element_type.ELEMENT_TYPE_REPORT_GABE, ui.element_type.ELEMENT_TYPE_REPORT_GABE_GAP, ui.element_type.ELEMENT_TYPE_REPORT_GABE_RECPS]:
