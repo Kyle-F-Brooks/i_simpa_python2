@@ -13,7 +13,7 @@ def set_direc_display(idgrp):
         ui.element(prop).updatedecimalconfig("v",0) #Y
         ui.element(prop).updatedecimalconfig("w",0) #Z
 
-def set_reciever_activation(self,idgrp,newstate):
+def set_reciever_activation(idgrp,newstate):
     grpsrc=ui.element(idgrp)
     all_property=grpsrc.getallelementbytype(ui.element_type.ELEMENT_TYPE_SCENE_RECEPTEURSP_RECEPTEUR_RENDU) 
     for prop in all_property:
