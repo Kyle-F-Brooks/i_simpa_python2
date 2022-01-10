@@ -24,14 +24,18 @@ def do_convert_all(folderwxid):
                     writer.writerow(row)
 class manager:
     def __init__(self):
+        # add function to link to button
         self.OnConvertAllid=ui.application.register_event(self.OnConvertAll)
     def getmenu(self,typeel,idel,menu):
+        # add menu buttons, must return true
         el=ui.element(idel)
         infos=el.getinfos()
         menu.insert(0,())
         menu.insert(0,(u"Convert all files in sub-directories to CSV",self.OnConvertAllid))
         return True
-        
+
+    #button function    
     def OnConvertAll(self,idel):
         do_convert_all(idel)
+# registers the menu buttons and where to assign thems
 ui.application.register_menu_manager(ui.element_type.ELEMENT_TYPE_REPORT_FOLDER, manager())
