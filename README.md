@@ -19,3 +19,12 @@ An edited version of a script that converts the gabe format files into csv. The 
 
 ## recp_res_tool
 Combines each value of a chosen measurement into a single file to allow for easier processing of data. Each file gets saved in a folder called "Fused Recievers" and the file name is appended with the measurement that was chosen.
+
+## absorption_calc
+using the EDT, calculate the sabine and absorption coefficient
+
+## plot_xyz
+Used to convert a grid of microphone data into a readable format for plotting libraries such as d-plot
+
+## stl_calc
+calculates the Transmission loss
