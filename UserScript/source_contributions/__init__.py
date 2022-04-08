@@ -5,13 +5,13 @@ from libsimpa import *
 import uictrl as ui
 import os
 
-def GetSources(folderwxid):
+def GetSources(elementId):
     # read through the file 
-    folders=ui.element(folderwxid)
+    folders=ui.element(elementId)
     sources=[]
     freq=[]
     for folder in folders.childs():
-        if folder[2]!="Fused Receivers" and folder[2]!="XYZ Plots" and folder[2]!="Source Contributions":
+        if folder[2]!="Fused Receivers" and folder[2]!="XYZ Plots" and folder[2]!="Source Contributions" and folder[2]!="Transmission Loss":
             files=ui.element(folder[0])
             for file in files.childs():
                 if len(sources)>0:
